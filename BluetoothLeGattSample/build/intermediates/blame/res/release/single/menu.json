@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\workspace\\new\\MYGTHandShank\\BluetoothLeGattSample\\build\\intermediates\\res\\merged\\release\\menu\\main.xml",
+        "source": "D:\\workspace\\new\\MYGTHandShank\\BluetoothLeGattSample\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\OTA3\\MYGTHandShank\\BluetoothLeGattSample\\build\\intermediates\\res\\merged\\release\\menu\\main.xml",
+        "source": "D:\\OTA3\\MYGTHandShank\\BluetoothLeGattSample\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\OTA3\\MYGTHandShank\\BluetoothLeGattSample\\build\\intermediates\\res\\merged\\release\\menu\\gatt_services.xml",
+        "source": "D:\\OTA3\\MYGTHandShank\\BluetoothLeGattSample\\src\\main\\res\\menu\\gatt_services.xml"
+    },
+    {
+        "merged": "D:\\workspace\\new\\MYGTHandShank\\BluetoothLeGattSample\\build\\intermediates\\res\\merged\\release\\menu\\gatt_services.xml",
+        "source": "D:\\workspace\\new\\MYGTHandShank\\BluetoothLeGattSample\\src\\main\\res\\menu\\gatt_services.xml"
+    }
+]

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#000000"
+                android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_currentversion"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#ffffff"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="30dp"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:background="#c6d2da"
+          android:layout_below="@+id/tv_currentversion"
+          android:layout_alignParentStart="true"
+          android:layout_marginTop="30dp"
+          android:id="@+id/view"/>
+
+
+      <TextView
+          android:id="@+id/tv_bestnew_version"
+          android:text="这是最新版本,您不需要升级"
+          android:textColor="#ffff"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+
+      <com.czp.library.ArcProgress
+          android:id="@+id/myProgress"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:degree="0"
+          app:progressStyle="arc"
+          android:layout_centerVertical="true"
+          android:layout_alignEnd="@+id/tv_bestnew_version"/>
+
+
+      <Button
+          android:id="@+id/btn_updata"
+          android:text="升级"
+          android:background="@drawable/updata"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/myProgress"
+          android:layout_alignEnd="@+id/tv_currentversion"
+          android:layout_marginTop="23dp"/>
+
+      <TextView
+          android:id="@+id/tv_CurrentPro"
+          android:text="当前进度:"
+          android:textColor="#ffffff"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/myProgress"
+          android:layout_alignStart="@+id/tv_currentversion"/>
+
+
+</RelativeLayout>

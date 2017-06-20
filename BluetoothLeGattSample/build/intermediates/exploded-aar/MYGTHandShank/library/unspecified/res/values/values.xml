@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColor">#CC99FF</color>
+    <declare-styleable name="ArcProgress"><attr format="dimension" name="borderWidth"/><attr format="color" name="unprogresColor"/><attr format="color" name="progressColor"/><attr format="dimension" name="tickWidth"/><attr format="integer" name="tickDensity"/><attr format="boolean" name="bgShow"/><attr format="dimension" name="radius"/><attr format="color" name="arcbgColor"/><attr format="integer" name="degree"/><attr format="boolean" name="arcCapRound"/><attr format="enum" name="progressStyle"><enum name="tick" value="1"/><enum name="arc" value="0"/></attr></declare-styleable>
+    <string name="app_name">library</string>
+</resources>

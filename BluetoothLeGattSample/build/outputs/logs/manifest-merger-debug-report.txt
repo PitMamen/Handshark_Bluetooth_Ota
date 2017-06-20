@@ -1,0 +1,97 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:19:1-72:12
+	package
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:20:11-56
+	android:versionName
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:22:11-36
+		INJECTED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml
+		INJECTED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:21:11-34
+		INJECTED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml
+		INJECTED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:19:11-69
+uses-sdk
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:24:5-26:40
+MERGED from [MYGTHandShank:library:unspecified] D:\OTA3\MYGTHandShank\BluetoothLeGattSample\build\intermediates\exploded-aar\MYGTHandShank\library\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:22.2.1] D:\OTA3\MYGTHandShank\BluetoothLeGattSample\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] D:\OTA3\MYGTHandShank\BluetoothLeGattSample\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:26:9-38
+	android:minSdkVersion
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:25:9-35
+uses-feature#android.hardware.bluetooth_le
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:31:5-33:34
+	android:required
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:33:9-32
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:32:9-53
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:35:5-67
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:35:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:36:5-73
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:36:22-71
+uses-permission#android.permission.INTERNET
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:37:5-66
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:37:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:38:5-78
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:38:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:39:5-75
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:39:22-73
+application
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:41:5-70:19
+MERGED from [MYGTHandShank:library:unspecified] D:\OTA3\MYGTHandShank\BluetoothLeGattSample\build\intermediates\exploded-aar\MYGTHandShank\library\unspecified\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:22.2.1] D:\OTA3\MYGTHandShank\BluetoothLeGattSample\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] D:\OTA3\MYGTHandShank\BluetoothLeGattSample\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:44:9-41
+	android:supportsRtl
+		ADDED from [MYGTHandShank:library:unspecified] D:\OTA3\MYGTHandShank\BluetoothLeGattSample\build\intermediates\exploded-aar\MYGTHandShank\library\unspecified\AndroidManifest.xml:14:9-35
+	android:icon
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:43:9-42
+	android:allowBackup
+		ADDED from [MYGTHandShank:library:unspecified] D:\OTA3\MYGTHandShank\BluetoothLeGattSample\build\intermediates\exploded-aar\MYGTHandShank\library\unspecified\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:45:9-56
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:42:9-38
+activity#com.example.android.bluetoothlegatt.DeviceScanActivity
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:46:9-53:20
+	android:label
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:48:13-45
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:47:13-47
+activity#com.example.android.bluetoothlegatt.MainActivity
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:56:9-62:20
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:56:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:58:13-61:29
+action#android.intent.action.MAIN
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:59:17-68
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:59:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:60:17-76
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:60:27-74
+activity#com.example.android.bluetoothlegatt.DeviceControlActivity
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:64:9-58
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:64:19-56
+service#com.example.android.bluetoothlegatt.BluetoothLeService
+ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:66:9-68:33
+	android:enabled
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:68:9-31
+	android:name
+		ADDED from D:\OTA3\MYGTHandShank\BluetoothLeGattSample\src\main\AndroidManifest.xml:67:9-43
