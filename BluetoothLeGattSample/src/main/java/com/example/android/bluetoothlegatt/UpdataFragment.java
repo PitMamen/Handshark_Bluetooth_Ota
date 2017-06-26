@@ -111,6 +111,8 @@ public class UpdataFragment extends Fragment {
 
     private void DownloadBin() {
 
+
+        //开启一个线程 下载bin文件
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -135,6 +137,8 @@ public class UpdataFragment extends Fragment {
                         String json = sb.toString();
                         String binUrl = null;
                         try {
+
+                            //解析
                             JSONObject object = new JSONObject(json);
                             JSONObject jsonObject = object.optJSONObject("response");
                             JSONObject drvies = jsonObject.optJSONObject("drives");
@@ -441,6 +445,7 @@ public class UpdataFragment extends Fragment {
 
     private String version;
 
+    //检测版本号 该方法将在 MainActivity的回调方法中调用
     public void setVersion(byte[] ver) {
         checkVersion = ver;
         Log.d("ota", "setVersion: " + Bytes2HexString(checkVersion));

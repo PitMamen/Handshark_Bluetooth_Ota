@@ -76,7 +76,7 @@ public class MainActivity extends Activity implements BluetoothFragment.CallBack
         if (null == frag) {
             ft.add(R.id.fl_content, fragment, tag);
         } else {
-            switch (tag){
+            switch (tag) {
                 case "update":
                     ft.show(mFragUpdate);
                     ft.hide(mFragBluetooth);
@@ -99,19 +99,16 @@ public class MainActivity extends Activity implements BluetoothFragment.CallBack
 
     private byte[] ver;
 
-@Override
-public void getData(byte[] data) {
-//    if (null == mFragUpdate) {
-//        mFragUpdate = new UpdataFragment();
-//        replaceFragment(mFragUpdate, "update");
-//    }
-    if(null == ver && null != data){
-        ((UpdataFragment) mFragUpdate).setVersion(data);
-        ver = data;
-    }else {
-        ((UpdataFragment) mFragUpdate).setData(data);
+    @Override
+    public void getData(byte[] data) {
+        if (null == ver && null != data) {
+            ((UpdataFragment) mFragUpdate).setVersion(data);
+            ver = data;
+        } else {
+            ((UpdataFragment) mFragUpdate).setData(data);
+        }
     }
-}
+
     private BluetoothLeService mBluetoothLeService;
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
@@ -134,8 +131,9 @@ public void getData(byte[] data) {
 
     private boolean mConnected;
     private String mAddress;
+
     public boolean writeCharacteristic(byte[] data) {
-        if(mConnected && null != mAddress){
+        if (mConnected && null != mAddress) {
             mBluetoothLeService.writeCharacteristic(data);
         }
         return mConnected && null != mAddress;
@@ -147,23 +145,23 @@ public void getData(byte[] data) {
         super.onDestroy();
     }
 
-    public void writeCheckVersion(){
+    public void writeCheckVersion() {
         byte[] versionBytes = new byte[4];
         versionBytes[0] = 0x55;
         versionBytes[1] = 0x04;
         versionBytes[2] = 0x55;
         versionBytes[3] = (byte) 0xAA;
-        if(null != mBluetoothLeService){
+        if (null != mBluetoothLeService) {
             mBluetoothLeService.writeCharacteristic(versionBytes);
         }
     }
 
-    public void resetVer(){
+    public void resetVer() {
         ver = null;
     }
 
 
-    private void initFragment(){
+    private void initFragment() {
         mFragUpdate = new UpdataFragment();
         addFragment(mFragUpdate, FRAG_TAG_UPDATE);
 
@@ -171,13 +169,13 @@ public void getData(byte[] data) {
         addFragment(mFragBluetooth, FRAG_TAG_BLUETOOTH);
     }
 
-    private void addFragment(Fragment fragment, String tag){
+    private void addFragment(Fragment fragment, String tag) {
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.add(R.id.fl_content, fragment, tag);
         ft.commit();
     }
 
-    private void showHideFragment(Fragment show, Fragment hide){
+    private void showHideFragment(Fragment show, Fragment hide) {
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.show(show);
         ft.hide(hide);

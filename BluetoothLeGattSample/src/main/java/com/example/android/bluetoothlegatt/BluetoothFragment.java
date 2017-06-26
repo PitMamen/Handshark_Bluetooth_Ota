@@ -93,6 +93,8 @@ public class BluetoothFragment extends Fragment implements BluetoothLeService.Ca
 //                    if (mdataStr != null) {
 //                        mBack.getData(mdataStr);   //将收到的数据 传入升级界面
 //                    }
+
+                    //这里获取到数据后 将数据保存到回调接口中
                     if(null != mBack){
                         mBack.getData(data);
                     }
