@@ -130,7 +130,7 @@ public class UpdataFragment extends Fragment {
                         String line = null;
                         StringBuffer sb = new StringBuffer();
                         while ((line = in.readLine()) != null) {
-                            sb.append(line);
+                            sb.append(line);   //拼接
                         }
                         String json = sb.toString();
                         String binUrl = null;
@@ -198,7 +198,7 @@ public class UpdataFragment extends Fragment {
                         InputStream is = connection.getInputStream();
 
                         binDatas.clear();
-                        binDatas.addAll(readIs(is));
+                        binDatas.addAll(readIs(is));    //将读取到的 bin文件内容 存储添加在集合中
 
                         is.close();
 
@@ -316,6 +316,7 @@ public class UpdataFragment extends Fragment {
 
                             Log.d("ota", "run: ************-> " + binDatas.size());
 
+                              //开始包 20个字节,3~16个字节为0Xff，
                             byte[] buffer = new byte[16];
                             for (int i = 0; i < 16; i++) {
                                 buffer[i] = (byte) 0xFF;
@@ -327,6 +328,7 @@ public class UpdataFragment extends Fragment {
                             for (int i = 0; i < 16; i++) {
                                 startPackeg[i + 2] = buffer[i];
                             }
+                            //在开始包的 第19个字节 是异或操作，
                             startPackeg[18] = getXor(buffer);
                             boolean connect = writeCharacteristic(startPackeg);   //发送 开始包
                             SystemClock.sleep(200);
@@ -335,8 +337,9 @@ public class UpdataFragment extends Fragment {
                                 try {
                                     //如果回执不是FF01 则继续等待
                                     Log.d("ota", "run: *****************-> " + mdataStr[0] + " : " + mdataStr[1]);
-//                                    while (!"01FF".equals(mdataStr)) {
+
                                     byte[] in = {startPackeg[0], startPackeg[1]};
+                                    //如果回执不等于 发过包的索引,则一直等待
                                     while (!checkByte(in, mdataStr)) {
                                         SystemClock.sleep(10);
                                     }
@@ -443,8 +446,8 @@ public class UpdataFragment extends Fragment {
         Log.d("ota", "setVersion: " + Bytes2HexString(checkVersion));
         int len = checkVersion.length;
         if (len > 3) {
-            byte[] bb = new byte[1];
-            bb[0] = checkVersion[2];
+            byte[] bb = new byte[1];  //定义一个临时数组  存储版本信息
+            bb[0] = checkVersion[2];   //第三个字节赋给 临时数组
             BigInteger big = new BigInteger(bb);
             String str = big.toString(16);
             version = getVersion(Integer.parseInt(str));
@@ -457,6 +460,7 @@ public class UpdataFragment extends Fragment {
         }
     }
 
+    //判断收到的回执 是否等于发过包的前两个字节
     private boolean checkByte(byte[] in, byte[] base) {
         if (null != in && null != base) {
             int inLen = in.length;
